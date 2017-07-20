@@ -1,0 +1,34 @@
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="add">Add item to list</div>
+	<div id="items">
+		<ul></ul>
+	</div>
+	<div id="count"></div>
+	<div id="form">
+		<form id="additem" action="" method="post" enctype="multipart/form-data">
+			<textarea name="desc_add">Description</textarea>
+			<input type="file" name="img_add" id="img_add">
+			<input id="data_add" name="data_add" type="hidden">
+			<input type="submit">
+		</form>
+		<form id="edititem" action="" method="post" enctype="multipart/form-data">
+			<textarea id="desc_edit" name="desc_edit">Description</textarea>
+			<img id="img_sample" src="" width="50" height="50">
+			<input type="file" name="img_edit" id="img_edit">
+			<input id="data_edit" name="data_edit" type="hidden">
+			<input id="id_edit" name="id_edit" type="hidden">
+			<input id="src_edit" name="src_edit" type="hidden">
+			<input type="submit">
+		</form>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="drag.js"></script>
+</div>
+</body>
+</html>
